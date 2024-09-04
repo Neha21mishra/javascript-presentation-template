@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Presentation Template</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Link to external libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/brython"></script>
+    <!-- Link to the JavaScript file -->
+    <script src="scripts/main.js" defer></script>
+</head>
+<body class="light-mode">
+
+    <!-- Opening Slide -->
+    <div class="slide opening-slide">
+        <div class="header">
+            <img src="assets/demo-logo.png" alt="Demo Logo" class="logo">
+            <h1>Welcome to the Presentation</h1>
+            <h3>Subtitle or description</h3>
+        </div>
+    </div>
+
+    <!-- Image Slide -->
+    <div class="slide image-slide">
+        <div class="header">
+            <img src="assets/demo-logo.png" alt="Demo Logo" class="logo">
+            <h2>Image Slide</h2>
+        </div>
+        <div class="content">
+            <img src="assets/sample-image1.jpg" alt="Sample Image 1">
+            <img src="assets/sample-image2.jpg" alt="Sample Image 2">
+        </div>
+        <div class="footer">
+            <p>© 2024 Demo Company. All rights reserved. Contact: contact@example.com</p>
+        </div>
+    </div>
+
+    <!-- Chart Slide -->
+    <div class="slide chart-slide">
+        <div class="header">
+            <img src="assets/demo-logo.png" alt="Demo Logo" class="logo">
+            <h2>Chart Slide</h2>
+        </div>
+        <div class="content">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="footer">
+            <p>© 2024 Demo Company. All rights reserved. Contact: contact@example.com</p>
+        </div>
+    </div>
+
+    <!-- Code Slide -->
+    <div class="slide code-slide">
+        <div class="header">
+            <img src="assets/demo-logo.png" alt="Demo Logo" class="logo">
+            <h2>Code Block</h2>
+        </div>
+        <div class="content">
+            <pre><code class="language-javascript">
+function greet() {
+    console.log("Hello, World!");
+}
+greet();
+            </code></pre>
+        </div>
+        <div class="footer">
+            <p>© 2024 Demo Company. All rights reserved. Contact: contact@example.com</p>
+        </div>
+    </div>
+
+    <!-- Python Compiler Slide -->
+    <div class="slide python-compiler-slide">
+        <div class="header">
+            <img src="assets/demo-logo.png" alt="Demo Logo" class="logo">
+            <h2>Python Code Compiler</h2>
+        </div>
+        <div class="content">
+            <textarea id="python-code" placeholder="Write your Python code here..."></textarea>
+            <button onclick="runPythonCode()">Run Code</button>
+            <div id="output"></div>
+        </div>
+        <div class="footer">
+            <p>© 2024 Demo Company. All rights reserved. Contact: contact@example.com</p>
+        </div>
+    </div>
+
+    <!-- Closing Slide -->
+    <div class="slide closing-slide">
+        <div class="header">
+            <img src="assets/demo-logo.png" alt="Demo Logo" class="logo">
+            <h2>Thank You!</h2>
+        </div>
+        <div class="content">
+            <p>Contact us: contact@example.com</p>
+        </div>
+        <div class="footer">
+            <p>© 2024 Demo Company. All rights reserved. Contact: contact@example.com</p>
+        </div>
+    </div>
+
+
+    <script>
+        // Toggle Light/Dark Mode
+        const toggleTheme = () => {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+    </script>
+  
+
+</body>
+</html>
